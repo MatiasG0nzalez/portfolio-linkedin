@@ -1,0 +1,20 @@
+<div class="p-4 mt-2 text-white bg-gray-800 md:rounded-xl">
+    <h2>Aptitudes</h2>
+
+    <div class="grid grid-cols-3  md:grid-cols-6 lg:grid-cols-9 gap-2 my-4  ">
+
+        
+        <ng-container *ngFor="let skill of skills">
+            <div class="skill-item p-2 flex flex-col justify-between items-center  ">
+                <img [src]="skill.skillImg" alt="" class="w-[70px] h-[70px] object-contain bg-white p-2">
+                <p class="text-center  mt-2 h-[30%] ">{{skill.skillName}}</p>
+            </div>
+        </ng-container>
+       
+
+        
+        
+        
+
+    </div>
+</div>
